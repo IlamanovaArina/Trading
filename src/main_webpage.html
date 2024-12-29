@@ -10,132 +10,129 @@
 </head>
 <body>
 
+    <!--<div class="container-fluid">-->
+    <div class="row">
+        <div class="col-md-2 bg-dark position-fixed container-fluid" style="height: 100vh;">                   <!-- Боковое меню -->
 
-<div class="container-fluid">
-<div class="row">
-<div class="col-md-2 bg-dark position-fixed" style="height: 100vh;">                   <!-- Боковое меню -->
+            <button type="button" class="btn btn-dark">              <!-- Боковое меню -- кнопка Меню -->
+                <img width="50" height="50" src="../photo/menu3.Default" class="img-thumbnail">
+                Меню
+            </button>
+            <div class="h4 pb-2 mb-4 text-danger border-bottom"></div> <!-- Полоска -->
 
-<button type="button" class="btn btn-dark">              <!-- Боковое меню -- кнопка Меню -->
-    <img width="50" height="50" src="../photo/menu3.Default" class="img-thumbnail">
-    Меню
-</button>
-<div class="h4 pb-2 mb-4 text-danger border-bottom"></div> <!-- Потоска -->
+            <button type="button" class="btn btn-dark">                    <!-- Боковое меню -- кнопка Главная -->
+                <img width="30" height="30" src="../photo/home1.png" class="img-thumbnail">
+                Главная
+            </button>
+            <button type="button" class="btn btn-dark">                    <!-- Боковое меню -- кнопка Категории -->
+                <img width="30" height="30" src="../photo/filter.png" class="img-thumbnail">
+                Категории
+            </button>
+            <button type="button" class="btn btn-dark">                   <!-- Боковое меню -- кнопка Заказы -->
+                <img width="30" height="30" src="../photo/table.png" class="img-thumbnail">
+                Заказы
+            </button>
+            <button type="button" class="btn btn-dark">                   <!-- Боковое меню -- кнопка Контакты -->
+                <img width="30" height="30" src="../photo/contact.png" class="img-thumbnail">
+                Контакты
+            </button>
 
-<button type="button" class="btn btn-dark">                    <!-- Боковое меню -- кнопка Главная -->
-    <img width="30" height="30" src="../photo/home1.png" class="img-thumbnail">
-    Главная
-</button>
-<button type="button" class="btn btn-dark">                    <!-- Боковое меню -- кнопка Категории -->
-    <img width="30" height="30" src="../photo/filter.png" class="img-thumbnail">
-    Категории
-</button>
-<button type="button" class="btn btn-dark">                   <!-- Боковое меню -- кнопка Заказы -->
-    <img width="30" height="30" src="../photo/table.png" class="img-thumbnail">
-    Заказы
-</button>
-<button type="button" class="btn btn-dark">                   <!-- Боковое меню -- кнопка Контакты -->
-    <img width="30" height="30" src="../photo/contact.png" class="img-thumbnail">
-    Контакты
-</button>
+            <div class="container">
+            <button class="btn btn-dark position-fixed bottom-0 start-0" >   <!-- Боковое меню -- кнопка Профиль внизу -->
+                <img width="30" height="30" src="../photo/profil.jpg" class="img-thumbnail">
+                Профиль
+            </button>
+        </div>
 
-<div class="container">
-    <button class="btn btn-dark position-fixed bottom-0 start-0" >   <!-- Боковое меню -- кнопка Профиль внизу -->
-        <img width="30" height="30" src="../photo/profil.jpg" class="img-thumbnail">
-        Профиль
-    </button>
-</div>
+        </div>  <!-- /Боковое меню -->
 
-</div>  <!-- /Боковое меню -->
+        <div class="col-2"></div>
+        <div class="col-md-10">  <!-- Основная часть страницы -->
 
-<div class="col-2"></div>
-<div class="col-md-10">  <!-- Основная часть страницы -->
+            <div class="row"> <!-- Основной блок для работы с колонками -->
+                <div class="col-1"></div>
+                <div class="col-10">  <!-- 1 Основная часть -->
+                    <figure class="text-center p-4">  <!-- 2 -->
+                        <blockquote class="blockquote">
+                            <h1>Главная</h1>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            Вы находитесь на сайте, предназначенном для продажи товаров
+                        </figcaption>
+                    </figure>  <!-- /2 -->
 
-     <div class="row"> <!-- Основной блок для работы с колонками -->
+                        <div class="row">  <!-- 3 Область, где отображаются карточки -->
 
-            <div class="col-1"></div>
-            <div class="col-10">  <!-- 1 Основная часть -->
-                <figure class="text-center">  <!-- 2 -->
-                  <blockquote class="blockquote">
-                    <p>Главная</p>
-                  </blockquote>
-                  <figcaption class="blockquote-footer">
-                    Вы находитесь на сайте, предназначенном для продажи товаров
-                  </figcaption>
+                            <div class="col-3">              <!-- 4 Карточка с кнопкой купить -->
 
-                    <div class="row">  <!-- 3 Область, где отображаются карточки -->
+                                        <div class="card bs-body-color">  <!-- 5 -->
+                                        <div class="card-body">  <!-- 6 -->
 
-                        <div class="col-3">              <!-- 4 Карточка с кнопкой купить -->
+                                            <div class="card-header">
+                                            Товар 1
+                                          </div>
+                                          <div class="card-body">
+                                            <h4 class="card-title">$ 100</h4>
+                                            <p>Горячая кукуруза!!!</p>
+                                            <a href="#" class="btn btn-primary">Купить</a>
+                                          </div>
 
-                            <div class="card bs-body-color">  <!-- 5 -->
-                            <div class="card-body">  <!-- 6 -->
+                                        </div>  <!-- 6 -->
+                                        </div>  <!-- 5 -->
 
-                                <div class="card-header">
-                                Товар 1
-                              </div>
-                              <div class="card-body">
-                                <h4 class="card-title">$ 100</h4>
-                                <p>Горячая кукуруза!!!</p>
-                                <a href="#" class="btn btn-primary">Купить</a>
-                              </div>
+                                    </div>  <!-- 4 Карточка -->
 
-                            </div>  <!-- 6 -->
-                            </div>  <!-- 5 -->
+                            <div class="col-1"></div>
 
-                        </div>  <!-- 4 Карточка -->
+                            <div class="col-3">  <!-- 4 Карточка с кнопкой купить -->
 
-                        <div class="col-1"></div>
+                                        <div class="card bs-body-color">  <!-- 5 -->
+                                        <div class="card-body">  <!-- 6 -->
 
-                        <div class="col-3">  <!-- 4 Карточка с кнопкой купить -->
+                                            <div class="card-header">
+                                            Товар 1
+                                          </div>
+                                          <div class="card-body">
+                                            <h4 class="card-title">$ 100</h4>
+                                            <p>Горячая кукуруза!!!</p>
+                                            <a href="#" class="btn btn-primary">Купить</a>
+                                          </div>
 
-                            <div class="card bs-body-color">  <!-- 5 -->
-                            <div class="card-body">  <!-- 6 -->
+                                        </div>  <!-- 6 -->
+                                        </div>  <!-- 5 -->
 
-                                <div class="card-header">
-                                Товар 1
-                              </div>
-                              <div class="card-body">
-                                <h4 class="card-title">$ 100</h4>
-                                <p>Горячая кукуруза!!!</p>
-                                <a href="#" class="btn btn-primary">Купить</a>
-                              </div>
+                                    </div>  <!-- 4 Карточка -->
 
-                            </div>  <!-- 6 -->
-                            </div>  <!-- 5 -->
+                            <div class="col-1"></div>
 
-                        </div>  <!-- 4 Карточка -->
+                            <div class="col-3">  <!-- 4 Карточка с кнопкой купить -->
 
-                        <div class="col-1"></div>
+                                        <div class="card bs-body-color">  <!-- 5 -->
+                                        <div class="card-body">  <!-- 6 -->
 
-                        <div class="col-3">  <!-- 4 Карточка с кнопкой купить -->
+                                            <div class="card-header">
+                                            Товар 1
+                                          </div>
+                                          <div class="card-body">
+                                            <h4 class="card-title">$ 100</h4>
+                                            <p>Горячая кукуруза!!!</p>
+                                            <a href="#" class="btn btn-primary">Купить</a>
+                                          </div>
 
-                            <div class="card bs-body-color">  <!-- 5 -->
-                            <div class="card-body">  <!-- 6 -->
+                                        </div>  <!-- 6 -->
+                                        </div>  <!-- 5 -->
 
-                                <div class="card-header">
-                                Товар 1
-                              </div>
-                              <div class="card-body">
-                                <h4 class="card-title">$ 100</h4>
-                                <p>Горячая кукуруза!!!</p>
-                                <a href="#" class="btn btn-primary">Купить</a>
-                              </div>
+                                    </div>  <!-- 4 Карточка -->
 
-                            </div>  <!-- 6 -->
-                            </div>  <!-- 5 -->
+                        </div>  <!-- /3 -->
 
-                        </div>  <!-- 4 Карточка -->
+                </div>  <!-- /1 -->
+                <div class="col-1"></div>
+            </div>
 
-                    </div>  <!-- /3 -->
-                </figure>  <!-- /2 -->
-            </div>  <!-- /1 -->
-            <div class="col-1"></div>
+
+        </div>  <!-- /Основная часть страницы -->
     </div>
-
-
-</div>  <!-- /Основная часть страницы -->
-</div>
-</div>
-
 
 </body>
 </html>
