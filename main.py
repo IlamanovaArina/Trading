@@ -16,7 +16,7 @@ class MyServer(BaseHTTPRequestHandler):
         path = self.get_path()
         print(path)
         try:
-            with open(path, "r", encoding="utf-8") as file:
+            with open(path, "rb") as file:
                 page_content = file.read()
         except FileNotFoundError:
             self.send_error(404, "File Not Found")
@@ -25,7 +25,7 @@ class MyServer(BaseHTTPRequestHandler):
             self.send_header("Content-type",
                              self.get_content_type())  # Отправка типа данных, который будет передаваться
             self.end_headers()  # Завершение формирования заголовков ответа
-            self.wfile.write(bytes(page_content, "utf-8"))  # Тело ответа
+            self.wfile.write(bytes(page_content))  # Тело ответа
 
     def get_path(self) -> str:
         if self.path == "/":
